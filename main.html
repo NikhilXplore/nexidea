@@ -6,7 +6,7 @@
     <title>NexIdea</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"/>
     <link rel="icon" type="nexidea icon" href="nexidea.png">
-    <link rel="stylesheet" href="main.css"
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="main-container">
@@ -40,5 +40,45 @@
                                 <span class="skills-required">Skills Required</span>
                                 </div>div>
                         </div>
+    <form action="submit" class="submission-form">
+        <h1>List Your Work</h1>
+        <input type="text" class="inputs name" placeholder="Your Name" required>
+        <input type="text" class="inputs work-category" placeholder="Work Category" required>
+        <input type="text" class="inputs skills-required" placeholder="skills-required" required>
+        <input type="textarea" class="inputs description" placeholder="description" required>
+        <input type="text" class="inputs experience-level" placeholder="Experience Level" required>
+        <input type="text" class="inputs budget" placeholder="Budget" required>
+        <button class="submit-form">Submit Work</button>
+    </form>
+
+    <footer>
+        <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#">About Us</a</li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+        <div class="query-message-div">
+            <h1 class="query-message">query-message</h1>
+            <input type="textarea" placeholder="Message......" class="inputs message-placeholder">
+            <button class="submit">Submit</button>
+        </div>
+        <div class="socials">
+            <h2 class="social-media-heading">Social Media</h2>
+            <ul class="social-media-list">
+                <li class="social-media-icons"><a href="https://discord.com/"><i class='bx bxl-discord-alt'></i></a></li>
+                <li class="social-media-icons"><a href="https://x.com/?lang=en">
+                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                            fill="white" width="56" clip-rule="evenodd" viewBox="0 0 512 462.799">
+                            <path fill-rule="nonzero"
+                                d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
