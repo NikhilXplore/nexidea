@@ -1,0 +1,95 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--default-font-family);
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.image {
+  width: 70%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1.1;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-04-11/YrOgVJ8LNy.png) no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+.welcome-to-nexidea {
+  color: #ffffff;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.gateway-to-work {
+  color: #4db6ac;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  background: #4db6ac;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
+  min-width: 120px;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button a {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .button a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button a {
+    font-size: 1.5rem;
+  }
+}
