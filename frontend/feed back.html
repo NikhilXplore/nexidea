@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexIdea</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"/>
-    <link rel="icon" type="nexidea icon" href="nexidea.png">
-    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback - [Your Website Name]</title>
+    <link rel="stylesheet" href="feed back.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
     <div class="main-container">
         <div class="nav-bar" id="home">
             <div class="whatsapp-image"></div>
             <div class="option">
-                <a href="#home"><div>Home</div></a>
+                <a href="main.html"><div>Home</div></a>
                 <a href="work.html"><div>Find Work</div></a>
                 <a href="about us.html"><div>About Us</div></a>
                 <a href="profile.html"><div class="profile"></div></a>
             </div>
     </div>
-    <div class="header">
-        <div class="find-your-next">
-            Find Your Next Work-From-Home Opportunity
+   
+    <section class="feedback">
+        <div class="container">
+            <h1>Feedback</h1>
+            <p>We value your feedback! Please let us know how we can improve our platform.</p>
+
+            <form action="submit_feedback.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address" />
+
+                <label for="message">Your Feedback:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your feedback here"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
         </div>
-        <div class="connect-clients">
-        connect with clients , showcase your skills, and earn</div>
-        <!-- <div class="frame-5"><span class="find-work-6">Find Work!</span></div>
-      </div> -->
-       <a href="work.html"> <button class="frame-5">Find Work</button></a>
-    <form action="submit" class="submission-form">
-        <h1>List Your Work</h1>
-        <input type="text" class="inputs name" placeholder="Your Name" required>
-        <input type="text" class="inputs work-category" placeholder="Work Category" required>
-        <input type="text" class="inputs skills-required" placeholder="skills-required" required>
-        <input type="textarea" class="inputs description" placeholder="description" required>
-        <input type="text" class="inputs experience-level" placeholder="Experience Level" required>
-        <input type="text" class="inputs budget" placeholder="Budget" required>
-        <button class="submit-form">Submit Work</button>
-    </form>
+    </section>
 
     <footer>
         <ul>
-            <li><a href="#home"> Home</a></li>
+            <li><a href="main.html"> Home</a></li>
             <li><a href="about us.html">About Us</a</li>
+            <li><a href="#">Features</a></li>
             <li><a href="feed back.html">Feedback</a></li>
         </ul>
         <div class="query-message-div">
@@ -68,5 +70,4 @@
         </div>
     </footer>
 </body>
-
 </html>

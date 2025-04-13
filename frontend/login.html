@@ -22,7 +22,7 @@
 
       <div class="forgot-password">Forgot Password?</div>
 
-      <input type="submit" class="login-btn" value="Login" />
+      <input type="submit" class="login-btn" value="Login" onclick="openNewFile()">
     </form>
 
     <div class="register-section">
@@ -30,5 +30,10 @@
       <a href="register.html">Register</a>
     </div>
   </div>
+  <script>
+    function openNewFile() {
+    window.location.href = 'main.html';  // This will open the main.html file
+}
+</script>
 </body>
 </html>

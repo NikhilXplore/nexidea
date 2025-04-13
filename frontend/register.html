@@ -22,12 +22,17 @@
                 <input type="password" id="password" name="password" placeholder="Enter Your Password" required />
                 <div class="forgot-password">Forgot Password?</div>
                 
-                <input type="submit" value="Register" class="submit-button" />
+                <input type="submit" value="Register" class="submit-button" onclick="openNewFile()">
             </form>
             <div class="login-section">
                 <span>Already have an account?</span>
                 <a href="login.html">Login</a>
             </div>
         </div>
+        <script>
+            function openNewFile() {
+            window.location.href = 'main.html';  // This will open the main.html file
+        }
+        </script>
     </body>
 </html>
