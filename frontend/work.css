@@ -148,6 +148,7 @@ footer {
     color: black;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
 
   .social-media-heading {
@@ -180,4 +181,23 @@ footer {
   a{
     text-decoration: none;
     color: white;
+  }
+  a:hover{
+    transform: scale(1.01);
+    color: rgb(205, 197, 197);
+  }
+  .card,button{
+    transition: all 0.3s ease;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  .submit:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px ;
   }

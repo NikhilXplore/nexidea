@@ -42,6 +42,7 @@ a {
 }
 
 a:hover {
+    cursor: pointer;
     transform: scale(1.01);
     color: drgb(205, 197, 197);
 }
