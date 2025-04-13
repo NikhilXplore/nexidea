@@ -43,10 +43,6 @@
     margin-right: 30px;
     font-size: 1.2rem;
   }
-  a:hover{
-    transform: scale(1.01);
-    color: drgb(205, 197, 197);
-  }
   .whatsapp-image {
     width: 4rem;
     height: 4rem;
@@ -201,7 +197,17 @@
     text-decoration: none;
     color: white;
   }
-
+  a:hover{
+    transform: scale(1.01);
+    color: rgb(205, 197, 197);
+  }
+  button{
+    transition: all 0.3s ease;
+  }
+  button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.401);
+  }
   @media (max-width: 700px) {
     .option{
         font-size: 0.8rem;

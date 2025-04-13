@@ -1,7 +1,7 @@
 :root {
     --primary-color: #4db6ac;
     --text-light: #eceff1;
-    --bg-blur: url(bg.png);
+    --bg-blur: url();
 }
 
 * {
