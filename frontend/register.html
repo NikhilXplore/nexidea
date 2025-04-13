@@ -25,57 +25,18 @@
                     placeholder="Enter Your Password" required />
 
                 <div class="forgot-password">Forgot Password?</div>
-<<<<<<< HEAD
-
-                <input type="submit" value="Register" class="submit-button" />
-=======
                 
                 <input type="submit" value="Register" class="submit-button" onclick="openNewFile()">
->>>>>>> 38e8506336f4a568e38a65401dfc9ae4877f0e40
             </form>
             <div class="login-section">
                 <span>Already have an account?</span>
                 <a href="login.html">Login</a>
             </div>
         </div>
-        <script>
-<<<<<<< HEAD
-            document.getElementById("register-form").addEventListener("submit", async (e) => {
-              e.preventDefault();
-          
-              const name = document.getElementById("name").value.trim();
-              const email = document.getElementById("email").value.trim();
-              const password = document.getElementById("password").value.trim();
-          
-              try {
-                const response = await fetch("http://localhost:5000/register", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify({ name, email, password }),
-                });
-          
-                const result = await response.json();
-          
-                if (response.ok && result.success) {
-                  alert("🎉 Registration successful! You can now login.");
-                  window.location.href = "login.html";
-                } else {
-                  alert("❌ Registration failed: " + result.message);
-                }
-              } catch (err) {
-                console.error("Registration error:", err);
-                alert("⚠ Something went wrong. Please try again.");
-              }
-            });
-          </script>
-          
-=======
+        <script>          
             function openNewFile() {
             window.location.href = 'main.html';  // This will open the main.html file
         }
         </script>
->>>>>>> 38e8506336f4a568e38a65401dfc9ae4877f0e40
     </body>
 </html>
